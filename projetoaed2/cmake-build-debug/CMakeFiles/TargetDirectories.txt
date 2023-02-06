@@ -1,0 +1,3 @@
+C:/Users/samue/OneDrive - Universidade do Porto/desktop/AED2223_T2_G41/projetoaed2/cmake-build-debug/CMakeFiles/projetoaed2.dir
+C:/Users/samue/OneDrive - Universidade do Porto/desktop/AED2223_T2_G41/projetoaed2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/samue/OneDrive - Universidade do Porto/desktop/AED2223_T2_G41/projetoaed2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
