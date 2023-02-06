@@ -1,0 +1,90 @@
+\hypertarget{_menu_8h_source}{}\doxysection{Menu.\+h}
+\label{_menu_8h_source}\index{C:/Users/samue/OneDrive -\/ Universidade do Porto/desktop/projetoaed\_3 (1)/projetoaed/projetoaed/codigo/include/Menu.h@{C:/Users/samue/OneDrive -\/ Universidade do Porto/desktop/projetoaed\_3 (1)/projetoaed/projetoaed/codigo/include/Menu.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#ifndef PROJETOAED\_MENU\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#define PROJETOAED\_MENU\_H}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <list>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}Class.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}Student.h"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}Horario.h"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}Request.h"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}Reader.h"{}}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_menu}{Menu}} \{}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{public}:}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_menu}{Menu}}();}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_menu}{Menu}}(\textcolor{keywordtype}{int} x);}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_b_s_t}{BST<Student>}} getStudentList();}
+\DoxyCodeLine{20     vector<Class> getClassList();}
+\DoxyCodeLine{21 \textcolor{keyword}{private}:}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} Wait();}
+\DoxyCodeLine{27     \textcolor{keywordtype}{void} mainMenu();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{32     \textcolor{keywordtype}{void} EstudanteHorario();}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} TurmaHorario();}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} CadeiraHorario();}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} CadeirainTurmaHorario();}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} EstudanteTurma();}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} EstudanteCadeira();}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{62     \textcolor{keywordtype}{void} EstudanteCadeiraTurma();}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{70     \textcolor{keywordtype}{int} EstudanteCadeiraTurmacount(\textcolor{keywordtype}{string} cadeira,\textcolor{keywordtype}{string} turma);}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{75     \textcolor{keywordtype}{void} AfterExec();}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{81     \textcolor{keywordtype}{void} MaisCadeiras();}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{86     \textcolor{keywordtype}{void} EstudanteinAno();}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{92     \textcolor{keywordtype}{void} LeaveClass(\textcolor{keywordtype}{string} aluno);}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{98     \textcolor{keywordtype}{void} JoinClass(\textcolor{keywordtype}{string} aluno);}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{104     \textcolor{keywordtype}{void} ChangeClass(\textcolor{keywordtype}{string} aluno);}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{111     \textcolor{keywordtype}{void} ChangesomeClasses(\textcolor{keywordtype}{string} aluno);}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{118     \textcolor{keywordtype}{int} ChangeifPossible(pair<Request,int> request);}
+\DoxyCodeLine{119     pair<int,int> students\_per\_class(\textcolor{keywordtype}{string} uc);}
+\DoxyCodeLine{120     set<string> turmas(\textcolor{keywordtype}{string} cadeira);}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{128     \textcolor{keywordtype}{bool} Compativeis(\mbox{\hyperlink{class_class}{Class}} x,\mbox{\hyperlink{class_class}{Class}} y);}
+\DoxyCodeLine{129 }
+\DoxyCodeLine{130 }
+\DoxyCodeLine{136     \textcolor{keywordtype}{bool} TurmaExists(std::string turma);}
+\DoxyCodeLine{137 }
+\DoxyCodeLine{144     \textcolor{keywordtype}{bool} CadeirainTurmaExists(std::string turma, std::string cadeira);}
+\DoxyCodeLine{145 }
+\DoxyCodeLine{151     \textcolor{keywordtype}{bool} StudentExists(\mbox{\hyperlink{class_student}{Student}} aluno);}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{158     \textcolor{keywordtype}{bool} CadeiraExists(std::string turma);}
+\DoxyCodeLine{159 }
+\DoxyCodeLine{166     \textcolor{keywordtype}{bool} AlunoinCadeiraExists(std::string aluno, std::string turma);}
+\DoxyCodeLine{167 }
+\DoxyCodeLine{168     \mbox{\hyperlink{class_reader}{Reader}} reader = \mbox{\hyperlink{class_reader}{Reader}}();}
+\DoxyCodeLine{169     vector<Class> classList = reader.ReadClasses();}
+\DoxyCodeLine{170     \mbox{\hyperlink{class_b_s_t}{BST<Student>}} studentList = reader.ReadStudent();}
+\DoxyCodeLine{171     vector<Classes\_per\_Uc> classes\_per\_uc = reader.ReadClasses\_per\_Uc();}
+\DoxyCodeLine{172     queue<pair<string,pair<Request,int>>> pedidos;}
+\DoxyCodeLine{173     list<pair<string,Request>> arquivos;}
+\DoxyCodeLine{174     \mbox{\hyperlink{class_horario}{Horario}} horario;}
+\DoxyCodeLine{175     \textcolor{keywordtype}{string} aluno;}
+\DoxyCodeLine{176 \};}
+\DoxyCodeLine{177 }
+\DoxyCodeLine{178 }
+\DoxyCodeLine{179 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//PROJETOAED\_MENU\_H}}
+
+\end{DoxyCode}

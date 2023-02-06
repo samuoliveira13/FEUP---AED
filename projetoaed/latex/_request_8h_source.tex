@@ -1,0 +1,28 @@
+\hypertarget{_request_8h_source}{}\doxysection{Request.\+h}
+\label{_request_8h_source}\index{C:/Users/samue/OneDrive -\/ Universidade do Porto/desktop/projetoaed\_3 (1)/projetoaed/projetoaed/codigo/include/Request.h@{C:/Users/samue/OneDrive -\/ Universidade do Porto/desktop/projetoaed\_3 (1)/projetoaed/projetoaed/codigo/include/Request.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef PROJETOAED\_REQUEST\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define PROJETOAED\_REQUEST\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}Student.h"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_request}{Request}}\{}
+\DoxyCodeLine{8 \textcolor{keyword}{public}:}
+\DoxyCodeLine{9     \mbox{\hyperlink{class_request}{Request}}();}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_request}{Request}}(\mbox{\hyperlink{class_student}{Student}} join\_class);}
+\DoxyCodeLine{11     \mbox{\hyperlink{class_request}{Request}}(pair<Student,Student> change\_class);}
+\DoxyCodeLine{12     \mbox{\hyperlink{class_request}{Request}}(vector<pair<Student,Student>> change\_some\_classes);}
+\DoxyCodeLine{13     \mbox{\hyperlink{class_student}{Student}} getStudenttoJoin();}
+\DoxyCodeLine{14     pair<Student,Student> changing();}
+\DoxyCodeLine{15     vector<pair<Student,Student>> vector\_changing();}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{private}:}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_student}{Student}} join\_class;}
+\DoxyCodeLine{19     pair<Student,Student> change\_class;}
+\DoxyCodeLine{20     vector<pair<Student,Student>> change\_some\_classes;}
+\DoxyCodeLine{21 \};}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//PROJETOAED\_REQUEST\_H}}
+
+\end{DoxyCode}

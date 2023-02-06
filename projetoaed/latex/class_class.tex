@@ -1,0 +1,175 @@
+\hypertarget{class_class}{}\doxysection{Class Class Reference}
+\label{class_class}\index{Class@{Class}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_class_a828a61a73d9f60526e70adc4e0cdb46a}\label{class_class_a828a61a73d9f60526e70adc4e0cdb46a}} 
+{\bfseries Class} (string classcode, string uccode, string weekday, float starthour, float duration, string classtype)
+\item 
+void \mbox{\hyperlink{class_class_a39259b2e14f60911b3af0d960e0c686f}{set\+Uccode}} (string uccode)
+\begin{DoxyCompactList}\small\item\em Setter and Getter for uccode. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_class_a1e23dfd42c227346d299f83adfb5461d}\label{class_class_a1e23dfd42c227346d299f83adfb5461d}} 
+string {\bfseries get\+Uccode} ()
+\item 
+void \mbox{\hyperlink{class_class_a751ac7318e76eb8753dcaeaeecad5bde}{set\+Classtype}} (string classtype)
+\begin{DoxyCompactList}\small\item\em Setter and Getter for classtype. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_class_a36d9f6572582c77b2bc786281c2366ed}\label{class_class_a36d9f6572582c77b2bc786281c2366ed}} 
+string {\bfseries get\+Class\+Type} ()
+\item 
+void \mbox{\hyperlink{class_class_ab5b800137cdd545977b85ec62de9fde6}{set\+Starthour}} (float starthour)
+\begin{DoxyCompactList}\small\item\em Setter and Getter for starthour. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_class_ac9766a662a25fe445cea5eac613dcf13}\label{class_class_ac9766a662a25fe445cea5eac613dcf13}} 
+float {\bfseries get\+Starthour} ()
+\item 
+void \mbox{\hyperlink{class_class_a83c3992bb46526f1cc0e2be7b8a1dde3}{set\+Duration}} (float duration)
+\begin{DoxyCompactList}\small\item\em Setter and Getter for duration. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_class_a0b905b2c85300912ac23db7ecadcd50e}\label{class_class_a0b905b2c85300912ac23db7ecadcd50e}} 
+float {\bfseries get\+Duration} ()
+\item 
+string \mbox{\hyperlink{class_class_a75bd94bcd5d4865d6238e71e8f32b76c}{get\+Week\+Day}} ()
+\begin{DoxyCompactList}\small\item\em Getter for Week\+Day. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_class_a876a547a160251c4b1769b13d36eef24}{get\+Class\+Code}} ()
+\begin{DoxyCompactList}\small\item\em Getter for Class\+Code. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_class_a5f0cb9681381c8b4a4391fe468e219e2}{order\+Week\+Day}} ()
+\begin{DoxyCompactList}\small\item\em Weekday Order (Monday -\/\texorpdfstring{$>$}{>} Tuesday -\/\texorpdfstring{$>$}{>} Wednesday, etc) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_class_a97b71fc3e5728796e5ba65c4fd79eb1f}{order\+Type\+Classes}} ()
+\begin{DoxyCompactList}\small\item\em Different ways or ordering the schedules. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_class_a1335c3385247ff7a9bd451b1b7c28506}\label{class_class_a1335c3385247ff7a9bd451b1b7c28506}} 
+bool {\bfseries operator$<$} (\mbox{\hyperlink{class_class}{Class}} \&other)
+\item 
+\mbox{\Hypertarget{class_class_ae0a5d5d0867a38480bf7ee0d0748fdbc}\label{class_class_ae0a5d5d0867a38480bf7ee0d0748fdbc}} 
+bool {\bfseries operator==} (\mbox{\hyperlink{class_class}{Class}} \&other)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_class_a876a547a160251c4b1769b13d36eef24}\label{class_class_a876a547a160251c4b1769b13d36eef24}} 
+\index{Class@{Class}!getClassCode@{getClassCode}}
+\index{getClassCode@{getClassCode}!Class@{Class}}
+\doxysubsubsection{\texorpdfstring{getClassCode()}{getClassCode()}}
+{\footnotesize\ttfamily string Class\+::get\+Class\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for Class\+Code. 
+
+\begin{DoxyReturn}{Returns}
+Class\+Code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_class_a75bd94bcd5d4865d6238e71e8f32b76c}\label{class_class_a75bd94bcd5d4865d6238e71e8f32b76c}} 
+\index{Class@{Class}!getWeekDay@{getWeekDay}}
+\index{getWeekDay@{getWeekDay}!Class@{Class}}
+\doxysubsubsection{\texorpdfstring{getWeekDay()}{getWeekDay()}}
+{\footnotesize\ttfamily string Class\+::get\+Week\+Day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for Week\+Day. 
+
+\begin{DoxyReturn}{Returns}
+Week\+Day 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_class_a97b71fc3e5728796e5ba65c4fd79eb1f}\label{class_class_a97b71fc3e5728796e5ba65c4fd79eb1f}} 
+\index{Class@{Class}!orderTypeClasses@{orderTypeClasses}}
+\index{orderTypeClasses@{orderTypeClasses}!Class@{Class}}
+\doxysubsubsection{\texorpdfstring{orderTypeClasses()}{orderTypeClasses()}}
+{\footnotesize\ttfamily int Class\+::order\+Type\+Classes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Different ways or ordering the schedules. 
+
+\begin{DoxyReturn}{Returns}
+the ordered schedules 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_class_a5f0cb9681381c8b4a4391fe468e219e2}\label{class_class_a5f0cb9681381c8b4a4391fe468e219e2}} 
+\index{Class@{Class}!orderWeekDay@{orderWeekDay}}
+\index{orderWeekDay@{orderWeekDay}!Class@{Class}}
+\doxysubsubsection{\texorpdfstring{orderWeekDay()}{orderWeekDay()}}
+{\footnotesize\ttfamily int Class\+::order\+Week\+Day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Weekday Order (Monday -\/\texorpdfstring{$>$}{>} Tuesday -\/\texorpdfstring{$>$}{>} Wednesday, etc) 
+
+\begin{DoxyReturn}{Returns}
+ordered weekdays 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_class_a751ac7318e76eb8753dcaeaeecad5bde}\label{class_class_a751ac7318e76eb8753dcaeaeecad5bde}} 
+\index{Class@{Class}!setClasstype@{setClasstype}}
+\index{setClasstype@{setClasstype}!Class@{Class}}
+\doxysubsubsection{\texorpdfstring{setClasstype()}{setClasstype()}}
+{\footnotesize\ttfamily void Class\+::set\+Classtype (\begin{DoxyParamCaption}\item[{string}]{classtype }\end{DoxyParamCaption})}
+
+
+
+Setter and Getter for classtype. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em classtype} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+classtype 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_class_a83c3992bb46526f1cc0e2be7b8a1dde3}\label{class_class_a83c3992bb46526f1cc0e2be7b8a1dde3}} 
+\index{Class@{Class}!setDuration@{setDuration}}
+\index{setDuration@{setDuration}!Class@{Class}}
+\doxysubsubsection{\texorpdfstring{setDuration()}{setDuration()}}
+{\footnotesize\ttfamily void Class\+::set\+Duration (\begin{DoxyParamCaption}\item[{float}]{duration }\end{DoxyParamCaption})}
+
+
+
+Setter and Getter for duration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em duration} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+duration 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_class_ab5b800137cdd545977b85ec62de9fde6}\label{class_class_ab5b800137cdd545977b85ec62de9fde6}} 
+\index{Class@{Class}!setStarthour@{setStarthour}}
+\index{setStarthour@{setStarthour}!Class@{Class}}
+\doxysubsubsection{\texorpdfstring{setStarthour()}{setStarthour()}}
+{\footnotesize\ttfamily void Class\+::set\+Starthour (\begin{DoxyParamCaption}\item[{float}]{starthour }\end{DoxyParamCaption})}
+
+
+
+Setter and Getter for starthour. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em starthour} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+starthour 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_class_a39259b2e14f60911b3af0d960e0c686f}\label{class_class_a39259b2e14f60911b3af0d960e0c686f}} 
+\index{Class@{Class}!setUccode@{setUccode}}
+\index{setUccode@{setUccode}!Class@{Class}}
+\doxysubsubsection{\texorpdfstring{setUccode()}{setUccode()}}
+{\footnotesize\ttfamily void Class\+::set\+Uccode (\begin{DoxyParamCaption}\item[{string}]{uccode }\end{DoxyParamCaption})}
+
+
+
+Setter and Getter for uccode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uccode} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uccode 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/samue/\+One\+Drive -\/ Universidade do Porto/desktop/projetoaed\+\_\+3 (1)/projetoaed/projetoaed/codigo/include/Class.\+h\item 
+C\+:/\+Users/samue/\+One\+Drive -\/ Universidade do Porto/desktop/projetoaed\+\_\+3 (1)/projetoaed/projetoaed/codigo/Class.\+cpp\end{DoxyCompactItemize}

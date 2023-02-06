@@ -1,0 +1,177 @@
+\hypertarget{class_horario}{}\doxysection{Horario Class Reference}
+\label{class_horario}\index{Horario@{Horario}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_horario_ac6dce8933de4eb8138443717780c854b}\label{class_horario_ac6dce8933de4eb8138443717780c854b}} 
+vector$<$ \mbox{\hyperlink{class_class}{Class}} $>$ {\bfseries get\+Horario} (string aluno)
+\item 
+\mbox{\Hypertarget{class_horario_a5e8c0e525efd6b87a22b02f32e8572e2}\label{class_horario_a5e8c0e525efd6b87a22b02f32e8572e2}} 
+void {\bfseries clear} ()
+\begin{DoxyCompactList}\small\item\em clears schedule \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_horario_a33ad00871e2c0504040619ef80ca0ef2}{push\+\_\+back}} (\mbox{\hyperlink{class_class}{Class}} x)
+\begin{DoxyCompactList}\small\item\em inserts x in horario \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_horario_a7e6ff8d36a6de91ded40e800bc4203b3}{type\+\_\+of\+\_\+order}} ()
+\begin{DoxyCompactList}\small\item\em asks the type of schedule order \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_horario_ad15ce10f1a4d0466e0ab106ce18b98ef}\label{class_horario_ad15ce10f1a4d0466e0ab106ce18b98ef}} 
+void {\bfseries print} ()
+\begin{DoxyCompactList}\small\item\em prints schedule \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_horario_a6ce6884de89001832f2c6e4fac8498c0}\label{class_horario_a6ce6884de89001832f2c6e4fac8498c0}} 
+vector$<$ \mbox{\hyperlink{class_class}{Class}} $>$\+::iterator {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{class_horario_af32cd2ae0f2cc902e6556a1983894fa5}\label{class_horario_af32cd2ae0f2cc902e6556a1983894fa5}} 
+vector$<$ \mbox{\hyperlink{class_class}{Class}} $>$\+::iterator {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{class_horario_a09c897a8652c7702c49274f15fff8b04}\label{class_horario_a09c897a8652c7702c49274f15fff8b04}} 
+void {\bfseries add} (\mbox{\hyperlink{class_student}{Student}} student)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_horario_ad24b057ee7477624605327714234bff4}{default\+\_\+order}} (\mbox{\hyperlink{class_class}{Class}} x, \mbox{\hyperlink{class_class}{Class}} y)
+\begin{DoxyCompactList}\small\item\em Orders the class in default order (Monday -\/\texorpdfstring{$>$}{>} Tuesday -\/\texorpdfstring{$>$}{>} Wednesday, etc) \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_horario_a41a07e09953f873da002672b46995d5c}{decrescent\+\_\+order}} (\mbox{\hyperlink{class_class}{Class}} x, \mbox{\hyperlink{class_class}{Class}} y)
+\begin{DoxyCompactList}\small\item\em Orders schedule in reverse (Friday -\/\texorpdfstring{$>$}{>} Thursday -\/\texorpdfstring{$>$}{>} Wednesday,etc) \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_horario_af787e46ec87390cf073e883d16889456}{theorics\+\_\+first}} (\mbox{\hyperlink{class_class}{Class}} x, \mbox{\hyperlink{class_class}{Class}} y)
+\begin{DoxyCompactList}\small\item\em Orders schedule with theoric classes first. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_horario_a0e76dc9d88580b5a663b218eab767944}{uc\+\_\+code\+\_\+order}} (\mbox{\hyperlink{class_class}{Class}} x, \mbox{\hyperlink{class_class}{Class}} y)
+\begin{DoxyCompactList}\small\item\em Orders schedule by the Uc\+Code. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_horario_af03375db5b6e05de5bdbbbcc34955d9e}{class\+\_\+duration\+\_\+order}} (\mbox{\hyperlink{class_class}{Class}} x, \mbox{\hyperlink{class_class}{Class}} y)
+\begin{DoxyCompactList}\small\item\em Orders the schedule by the class duration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_horario_af03375db5b6e05de5bdbbbcc34955d9e}\label{class_horario_af03375db5b6e05de5bdbbbcc34955d9e}} 
+\index{Horario@{Horario}!class\_duration\_order@{class\_duration\_order}}
+\index{class\_duration\_order@{class\_duration\_order}!Horario@{Horario}}
+\doxysubsubsection{\texorpdfstring{class\_duration\_order()}{class\_duration\_order()}}
+{\footnotesize\ttfamily bool Horario\+::class\+\_\+duration\+\_\+order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_class}{Class}}}]{x,  }\item[{\mbox{\hyperlink{class_class}{Class}}}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Orders the schedule by the class duration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_horario_a41a07e09953f873da002672b46995d5c}\label{class_horario_a41a07e09953f873da002672b46995d5c}} 
+\index{Horario@{Horario}!decrescent\_order@{decrescent\_order}}
+\index{decrescent\_order@{decrescent\_order}!Horario@{Horario}}
+\doxysubsubsection{\texorpdfstring{decrescent\_order()}{decrescent\_order()}}
+{\footnotesize\ttfamily bool Horario\+::decrescent\+\_\+order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_class}{Class}}}]{x,  }\item[{\mbox{\hyperlink{class_class}{Class}}}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Orders schedule in reverse (Friday -\/\texorpdfstring{$>$}{>} Thursday -\/\texorpdfstring{$>$}{>} Wednesday,etc) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_horario_ad24b057ee7477624605327714234bff4}\label{class_horario_ad24b057ee7477624605327714234bff4}} 
+\index{Horario@{Horario}!default\_order@{default\_order}}
+\index{default\_order@{default\_order}!Horario@{Horario}}
+\doxysubsubsection{\texorpdfstring{default\_order()}{default\_order()}}
+{\footnotesize\ttfamily bool Horario\+::default\+\_\+order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_class}{Class}}}]{x,  }\item[{\mbox{\hyperlink{class_class}{Class}}}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Orders the class in default order (Monday -\/\texorpdfstring{$>$}{>} Tuesday -\/\texorpdfstring{$>$}{>} Wednesday, etc) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_horario_a33ad00871e2c0504040619ef80ca0ef2}\label{class_horario_a33ad00871e2c0504040619ef80ca0ef2}} 
+\index{Horario@{Horario}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!Horario@{Horario}}
+\doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}}
+{\footnotesize\ttfamily void Horario\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_class}{Class}}}]{x }\end{DoxyParamCaption})}
+
+
+
+inserts x in horario 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_horario_af787e46ec87390cf073e883d16889456}\label{class_horario_af787e46ec87390cf073e883d16889456}} 
+\index{Horario@{Horario}!theorics\_first@{theorics\_first}}
+\index{theorics\_first@{theorics\_first}!Horario@{Horario}}
+\doxysubsubsection{\texorpdfstring{theorics\_first()}{theorics\_first()}}
+{\footnotesize\ttfamily bool Horario\+::theorics\+\_\+first (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_class}{Class}}}]{x,  }\item[{\mbox{\hyperlink{class_class}{Class}}}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Orders schedule with theoric classes first. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_horario_a7e6ff8d36a6de91ded40e800bc4203b3}\label{class_horario_a7e6ff8d36a6de91ded40e800bc4203b3}} 
+\index{Horario@{Horario}!type\_of\_order@{type\_of\_order}}
+\index{type\_of\_order@{type\_of\_order}!Horario@{Horario}}
+\doxysubsubsection{\texorpdfstring{type\_of\_order()}{type\_of\_order()}}
+{\footnotesize\ttfamily int Horario\+::type\+\_\+of\+\_\+order (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+asks the type of schedule order 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_horario_a0e76dc9d88580b5a663b218eab767944}\label{class_horario_a0e76dc9d88580b5a663b218eab767944}} 
+\index{Horario@{Horario}!uc\_code\_order@{uc\_code\_order}}
+\index{uc\_code\_order@{uc\_code\_order}!Horario@{Horario}}
+\doxysubsubsection{\texorpdfstring{uc\_code\_order()}{uc\_code\_order()}}
+{\footnotesize\ttfamily bool Horario\+::uc\+\_\+code\+\_\+order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_class}{Class}}}]{x,  }\item[{\mbox{\hyperlink{class_class}{Class}}}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Orders schedule by the Uc\+Code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/samue/\+One\+Drive -\/ Universidade do Porto/desktop/projetoaed\+\_\+3 (1)/projetoaed/projetoaed/codigo/include/Horario.\+h\item 
+C\+:/\+Users/samue/\+One\+Drive -\/ Universidade do Porto/desktop/projetoaed\+\_\+3 (1)/projetoaed/projetoaed/codigo/Horario.\+cpp\end{DoxyCompactItemize}
